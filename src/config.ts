@@ -1,5 +1,5 @@
 import { http, createConfig } from 'wagmi'
-import { base, mainnet, optimism } from 'wagmi/chains'
+import { base, mainnet } from 'wagmi/chains'
 import { injected, metaMask, safe, walletConnect } from 'wagmi/connectors'
 
 const projectId = import.meta.env.VITE_WALLETCONNECT_PROJECT_ID
