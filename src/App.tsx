@@ -3,6 +3,7 @@ import { WagmiProvider, useAccount } from 'wagmi'
 import { config } from './config.ts'
 import { Account } from './account.tsx'
 import { WalletOptions } from './WalletConnector.tsx'
+import { SwitchChain } from './SwitchChain.tsx'
 
 const queryClient = new QueryClient()
 
@@ -17,8 +18,12 @@ function App() {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <ConnectWallet />
+        <SwitchChain ></SwitchChain>
       </QueryClientProvider>
-    </WagmiProvider>
+     
+    </WagmiProvider>  
+
+    
   )
 }
 

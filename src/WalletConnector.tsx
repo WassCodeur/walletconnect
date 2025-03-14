@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Connector, useConnect } from 'wagmi'
 
+
+
+
 export function WalletOptions() {
     const { connectors, connect } = useConnect()
 
@@ -13,6 +16,8 @@ export function WalletOptions() {
         />
     )
 }
+
+
 
 function WalletOption({
     connector,
