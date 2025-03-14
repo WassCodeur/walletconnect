@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiProvider, useAccount } from 'wagmi'
 import { config } from './config.ts'
 import { Account } from './account.tsx'
-import { WalletOptions } from './wallet-options.tsx'
+import { WalletOptions } from './WalletConnector.tsx'
 
 const queryClient = new QueryClient()
 
