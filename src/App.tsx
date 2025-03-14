@@ -9,7 +9,7 @@ const queryClient = new QueryClient()
 
 function ConnectWallet() {
   const { isConnected } = useAccount()
-  if (isConnected) return <Account />
+  if (isConnected) return <><Account /><SwitchChain></SwitchChain></>
   return <WalletOptions />
 }
 
@@ -18,7 +18,6 @@ function App() {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <ConnectWallet />
-        <SwitchChain ></SwitchChain>
       </QueryClientProvider>
      
     </WagmiProvider>  
